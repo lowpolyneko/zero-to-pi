@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero to Pi — Setup</title>
+<style>
+body { font-family: system-ui, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1rem; background: #0d1117; color: #c9d1d9; }
+h1 { color: #58a6ff; }
+pre { background: #161b22; padding: 1rem; border-radius: 8px; border: 1px solid #30363d; overflow-x: auto; }
+code { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.9rem; }
+.copy-btn { margin-top: 0.5rem; padding: 0.4rem 0.8rem; background: #238636; border: none; color: #fff; border-radius: 6px; cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>Zero to Pi</h1>
+<p>Copy and paste this one-liner to run the setup:</p>
+<pre><code>curl -fsSL https://raw.githubusercontent.com/lowpolyneko/zero-to-pi/main/setup.sh | sh</code></pre>
+<button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy</button>
+</body>
+</html>
