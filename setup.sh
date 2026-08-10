@@ -6,6 +6,7 @@ mkdir -p ~/.local/bin
 curl -fsSL https://raw.githubusercontent.com/argonne-lcf/inference-endpoints/refs/heads/main/inference_auth_token.sh > ~/.local/bin/inference_auth_token.sh
 chmod u+x ~/.local/bin/inference_auth_token.sh
 
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.zshrc
 . ~/.zshrc
 
 inference_auth_token.sh authenticate < /dev/tty
