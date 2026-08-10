@@ -29,4 +29,4 @@ cat > ~/.pi/agent/models.json << 'EOF'
 }
 EOF
 
-echo "Done! You can start the agent with \`pi\`"
+echo "Done! You can start the agent with \`. ~/.zshrc; pi\`"
