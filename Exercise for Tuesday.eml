@@ -1,0 +1,63 @@
+From: "Wong, Ethan" <ewong@anl.gov>
+To: "Jones, Sean L." <sljones@anl.gov>
+CC: "Papka, Michael E." <papka@anl.gov>, "Stevens, Rick L" <stevens@anl.gov>, "Morin, Gregory S." <gmorin@anl.gov>
+Subject: RE: Exercise for Tuesday - Funding Opportunity Agent Task Plan
+Date: Tue, 11 Aug 2026 09:00:00 +0000
+
+Hi Sean,
+
+Thanks for the detailed background on the funding opportunity landscape. Based on your notes and Mike's suggestion, I've structured this as a concrete task plan for the Autonomous Discovery initiative.
+
+**Objective:** Build an agent-based system to collate, summarize, and track federal funding opportunities across agencies.
+
+---
+
+### 1. Research Funding Sources (Immediate)
+
+| Source | URL | Key Notes |
+|--------|-----|-----------|
+| **Grants.gov** | https://simpler.grants.gov/search | Comprehensive, has "forecasted" filter; summaries lack eligibility/award details; NIH R01 noise needs filtering |
+| **DOE** | https://www.energy.gov/listings/recent-funding-opportunities-announcements | Recent announcements |
+| **DOE** | https://www.energy.gov/funding-opportunities | General portal |
+| **NSF** | https://www.nsf.gov/funding/opportunities | NSF 26-512 "AI Datasets" - Labs eligible, Genesis Mission referenced |
+| **NIH** | https://grants.nih.gov/funding/explore-nih-opportunities | Standard R01 programs clutter results |
+| **DARPA** | https://www.darpa.mil/work-with-us/opportunities | R&D opportunities |
+
+---
+
+### 2. Agent Development Tasks
+
+- [ ] **Crawl/extract** from each portal (agency, program, eligibility, award amount, deadline, forecasted vs. active)
+- [ ] **Filter** redundant programs (e.g., standard NIH R01)
+- [ ] **Cross-reference** with Autonomous Discovery initiative keywords
+- [ ] **Generate** summarized landscape reports for planning
+
+---
+
+### 3. Data Strategy Decision Needed
+
+**Option A:** Provide seed data files (manual copy/paste of opportunities)
+**Option B:** Build agents to work directly from live websites
+
+*Recommendation: Option B* — Grants.gov and agency portals are comprehensive enough for agents to operate autonomously.
+
+---
+
+### 4. Example Workflow to Replicate (NSF AI Datasets)
+
+1. Grants.gov listing → 2. NSF program page → 3. NSF 26-512 solicitation
+2. Extract: Labs eligible, dollar amounts, Genesis Mission reference
+
+---
+
+### Next Steps
+
+Please confirm:
+1. Go with **Option B** (live website agents)?
+2. Any additional agencies or keywords for the Autonomous Discovery filter?
+3. Preferred output format for the landscape report (spreadsheet, dashboard, markdown)?
+
+Targeting completion by **Tuesday** as discussed.
+
+Best,
+Ethan

@@ -17,5 +17,74 @@ code { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.9rem; 
 <p>Copy and paste this one-liner to run the setup:</p>
 <pre><code>curl -fsSL https://raw.githubusercontent.com/lowpolyneko/zero-to-pi/main/setup.sh | sh</code></pre>
 <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy</button>
+
+<hr style="margin: 2rem 0; border-color: #30363d;">
+<h2>Email Preview</h2>
+<div style="background: #161b22; padding: 1rem; border-radius: 8px; border: 1px solid #30363d; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.85rem; white-space: pre-wrap; line-height: 1.6;">
+<strong>From:</strong> "Wong, Ethan" &lt;ewong@anl.gov&gt;<br>
+<strong>To:</strong> "Jones, Sean L." &lt;sljones@anl.gov&gt;<br>
+<strong>CC:</strong> "Papka, Michael E." &lt;papka@anl.gov&gt;, "Stevens, Rick L" &lt;stevens@anl.gov&gt;, "Morin, Gregory S." &lt;gmorin@anl.gov&gt;<br>
+<strong>Subject:</strong> RE: Exercise for Tuesday - Funding Opportunity Agent Task Plan<br>
+<strong>Date:</strong> Tue, 11 Aug 2026 09:00:00 +0000<br>
+<br>
+Hi Sean,<br>
+<br>
+Thanks for the detailed background on the funding opportunity landscape. Based on your notes and Mike's suggestion, I've structured this as a concrete task plan for the Autonomous Discovery initiative.<br>
+<br>
+<strong>Objective:</strong> Build an agent-based system to collate, summarize, and track federal funding opportunities across agencies.<br>
+<br>
+---<br>
+<br>
+<strong>1. Research Funding Sources (Immediate)</strong><br>
+<br>
+| Source | URL | Key Notes |<br>
+|--------|-----|-----------|<br>
+| <strong>Grants.gov</strong> | https://simpler.grants.gov/search | Comprehensive, has "forecasted" filter; summaries lack eligibility/award details; NIH R01 noise needs filtering |<br>
+| <strong>DOE</strong> | https://www.energy.gov/listings/recent-funding-opportunities-announcements | Recent announcements |<br>
+| <strong>DOE</strong> | https://www.energy.gov/funding-opportunities | General portal |<br>
+| <strong>NSF</strong> | https://www.nsf.gov/funding/opportunities | NSF 26-512 "AI Datasets" - Labs eligible, Genesis Mission referenced |<br>
+| <strong>NIH</strong> | https://grants.nih.gov/funding/explore-nih-opportunities | Standard R01 programs clutter results |<br>
+| <strong>DARPA</strong> | https://www.darpa.mil/work-with-us/opportunities | R&amp;D opportunities |<br>
+<br>
+---<br>
+<br>
+<strong>2. Agent Development Tasks</strong><br>
+<br>
+- [ ] <strong>Crawl/extract</strong> from each portal (agency, program, eligibility, award amount, deadline, forecasted vs. active)<br>
+- [ ] <strong>Filter</strong> redundant programs (e.g., standard NIH R01)<br>
+- [ ] <strong>Cross-reference</strong> with Autonomous Discovery initiative keywords<br>
+- [ ] <strong>Generate</strong> summarized landscape reports for planning<br>
+<br>
+---<br>
+<br>
+<strong>3. Data Strategy Decision Needed</strong><br>
+<br>
+<strong>Option A:</strong> Provide seed data files (manual copy/paste of opportunities)<br>
+<strong>Option B:</strong> Build agents to work directly from live websites<br>
+<br>
+<em>Recommendation: Option B</em> — Grants.gov and agency portals are comprehensive enough for agents to operate autonomously.<br>
+<br>
+---<br>
+<br>
+<strong>4. Example Workflow to Replicate (NSF AI Datasets)</strong><br>
+<br>
+1. Grants.gov listing → 2. NSF program page → 3. NSF 26-512 solicitation<br>
+2. Extract: Labs eligible, dollar amounts, Genesis Mission reference<br>
+<br>
+---<br>
+<br>
+<strong>Next Steps</strong><br>
+<br>
+Please confirm:<br>
+1. Go with <strong>Option B</strong> (live website agents)?<br>
+2. Any additional agencies or keywords for the Autonomous Discovery filter?<br>
+3. Preferred output format for the landscape report (spreadsheet, dashboard, markdown)?<br>
+<br>
+Targeting completion by <strong>Tuesday</strong> as discussed.<br>
+<br>
+Best,<br>
+Ethan
+</div>
+<a class="copy-btn" href="https://raw.githubusercontent.com/lowpolyneko/zero-to-pi/main/Exercise%20for%20Tuesday.eml" download="Exercise for Tuesday.eml">Download Email</a>
 </body>
 </html>
